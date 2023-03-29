@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 
 {% block title %}
-    {{title}}
+    {% if title %}
+        {{ title }}
+    {% else %}
+        Social-Network
+    {% endif %}
 {% endblock %}
 
 {% block content %}
